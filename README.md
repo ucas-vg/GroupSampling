@@ -33,10 +33,10 @@ GroupSampling/examples/data
 
 ## Training
 
-We utilize 1 GTX-1080TI GPUs for training.
+We utilize 1 GTX-2080TI GPU for training.
 
-+ use `--group-n 256` for Market-1501, `--group-n 128` for DukeMTMC-reID, and `--group-n 2048` for MSMT17;
-+ use `--iters 400` (default) for Market-1501 and DukeMTMC-reID, `--iters 800` for MSMT17;
++ Use `--group-n 256` for Market-1501, `--group-n 128` for DukeMTMC-reID, and `--group-n 2048` for MSMT17.
++ Use `--iters 400` (default) for Market-1501 and DukeMTMC-reID, `--iters 800` for MSMT17.
 
 *Market-1501:*
 ```
@@ -57,7 +57,9 @@ python examples/train.py -d msmt17 --logs-dir logs/msmt_resnet50 --group-n 2048 
 To evaluate the model, run:
 ```
 python examples/test.py -d $DATASET --resume $PATH
-
+```
+**Some examples:**
+```
 ### Market-1501 ###
 python examples/test.py -d market1501 --resume logs/market_resnet50/model_best.pth.tar
 ```
@@ -66,6 +68,6 @@ python examples/test.py -d market1501 --resume logs/market_resnet50/model_best.p
 ## Results
 ![results](figs/results.png)
 
-## Acknowledgement
+## Acknowledgements
 
-Codes are built upon [SpCL](https://github.com/yxgeee/SpCL).
+Codes are built upon [SpCL](https://github.com/yxgeee/SpCL). Thanks to Yixiao Ge for opening source.
