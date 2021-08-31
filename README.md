@@ -2,7 +2,7 @@
 ![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.0-yellow.svg)
 
 # Group Sampling
-Group Sampling for Unsupervised Person Re-identification
+Rethinking Sampling Strategies for Unsupervised Person Re-identification [[arXiv]](https://arxiv.org/abs/2107.03024)
 
 ## Requirements
 
@@ -35,8 +35,7 @@ GroupSampling/examples/data
 
 We utilize 1 GTX-2080TI GPU for training.
 
-+ Use `--group-n 256` for Market-1501, `--group-n 128` for DukeMTMC-reID, and `--group-n 2048` for MSMT17.
-+ Use `--iters 400` (default) for Market-1501 and DukeMTMC-reID, `--iters 800` for MSMT17.
++ Use `--group-n 256` for Market-1501, `--group-n 128` for DukeMTMC-reID, and `--group-n 1024` for MSMT17.
 
 *Market-1501:*
 ```
@@ -50,7 +49,12 @@ python examples/train.py -d dukemtmc --logs-dir logs/duke_resnet50 --group-n 128
 
 *MSMT17:*
 ```
-python examples/train.py -d msmt17 --logs-dir logs/msmt_resnet50 --group-n 2048 --iters 800
+python examples/train.py -d msmt17 --logs-dir logs/msmt_resnet50 --group-n 1024 --iters 800
+```
+
+We recommend using 4 GPUs to train MSMT17 for better performance.
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/train.py -d msmt17 --logs-dir logs/msmt_resnet50-gpu4 --group-n 1024 -b 256 --momentum 0.1 --lr 0.00005
 ```
 
 ## Evaluation
