@@ -55,7 +55,7 @@ class GroupSampler(Sampler):
             return iter(ret)
 
     def __str__(self):
-        return f"GatherSampler(num_instances={self.group_n}, batch_size={self.batch_size})"
+        return f"GroupSampler(num_instances={self.group_n}, batch_size={self.batch_size})"
 
     def __repr__(self):
         return self.__str__()
