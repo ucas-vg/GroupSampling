@@ -10,13 +10,13 @@ from torch import nn
 from torch.backends import cudnn
 from torch.utils.data import DataLoader
 
-from spcl import datasets
-from spcl import models
-from spcl.evaluators import Evaluator
-from spcl.utils.data import transforms as T
-from spcl.utils.data.preprocessor import Preprocessor
-from spcl.utils.logging import Logger
-from spcl.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
+from gs import datasets
+from gs import models
+from gs.evaluators import Evaluator
+from gs.utils.data import transforms as T
+from gs.utils.data.preprocessor import Preprocessor
+from gs.utils.logging import Logger
+from gs.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
 
 
 def get_data(name, data_dir, height, width, batch_size, workers):
