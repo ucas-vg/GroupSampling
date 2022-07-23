@@ -1,4 +1,7 @@
 # Group Sampling
+
+--------------
+
 Rethinking Sampling Strategies for Unsupervised Person Re-identification [[arXiv]](https://arxiv.org/abs/2107.03024)
 
 ## Requirements
