@@ -1,10 +1,10 @@
-![Python >=3.5](https://img.shields.io/badge/Python->=3.5-blue.svg)
-![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.0-yellow.svg)
-
 # Group Sampling
 Rethinking Sampling Strategies for Unsupervised Person Re-identification [[arXiv]](https://arxiv.org/abs/2107.03024)
 
 ## Requirements
+
+![Python >=3.5](https://img.shields.io/badge/Python->=3.5-blue.svg)
+![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.0-yellow.svg)
 
 ### Installation
 
