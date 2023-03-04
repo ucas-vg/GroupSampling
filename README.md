@@ -3,9 +3,9 @@
 
 # Group Sampling
 
-> **[Rethinking Sampling Strategies for Unsupervised Person Re-identification](https://arxiv.org/abs/2107.03024)**<br>
+> **[Rethinking Sampling Strategies for Unsupervised Person Re-identification](https://doi.org/10.1109/TIP.2022.3224325)**<br>
 > Xumeng Han, Xuehui Yu, Guorong Li, Jian Zhao, Gang Pan, Qixiang Ye, Jianbin Jiao and Zhenjun Han<br>
-> IEEE Transactions on Image Processing (**TIP**), 2023<br>
+> *IEEE Transactions on Image Processing (**TIP**) 2023 ([arXiv:2107.03024](https://arxiv.org/abs/2107.03024))*<br>
 
 ## Requirements
 
