@@ -73,6 +73,20 @@ CUDA_VISIBLE_DEVICES=0 python examples/test.py -d market1501 --resume logs/marke
 ## Results
 ![results](figs/results.png)
 
+## Citation
+
+If you find this work useful for your research, please cite:
+```
+@article{han2022rethinking,
+  title={Rethinking Sampling Strategies for Unsupervised Person Re-Identification}, 
+  author={Han, Xumeng and Yu, Xuehui and Li, Guorong and Zhao, Jian and Pan, Gang and Ye, Qixiang and Jiao, Jianbin and Han, Zhenjun},
+  journal={IEEE Transactions on Image Processing}, 
+  year={2023},
+  volume={32},
+  pages={29-42},
+  doi={10.1109/TIP.2022.3224325}}
+```
+
 ## Acknowledgements
 
 Codes are built upon [SpCL](https://github.com/yxgeee/SpCL). Thanks to Yixiao Ge for opening source.
